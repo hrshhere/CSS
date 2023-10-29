@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Flex</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 10px;
+            width: 300px;
+            margin: 0 auto;
+            transition-property:2s;
+
+        }
+
+        .item{
+            background-color: black;
+            color: white;
+            padding:30px;
+        }
+        .item:hover{
+        transition-property:  2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Header</div>
+        <div class="item">Paragraph</div>
+        <div class="item">Footer</div>
+        <div class="item">Left</div>
+        <div class="item">Right</div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

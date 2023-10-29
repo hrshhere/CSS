@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Box Model Example</title>
+    <style>
+        /* Styles for the card container */
+        .card {
+            width: 300px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            /* margin: 120px; */
+            margin-top: 200px;
+            margin-left: 420px;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: scale(3.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styles for the card header */
+        .card-header {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* Styles for the card content */
+        .card-content {
+            padding: 15px;
+        }
+
+        /* Add some styles for the paragraph inside the card content */
+        .card-content p {
+            margin: 0;
+            /* Remove default margin to fit the card-content properly */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            Card Header
+        </div>
+        <div class="card-content">
+            <p>This is some content within the card.</p>
+        </div>
+    </div>
+</body>
+
+</html>

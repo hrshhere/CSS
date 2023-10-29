@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <h3><u>What is CSS?</u></h3>
+    <p>CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the presentation and formatting of a document written in HTML (Hypertext Markup Language). In simpler terms, CSS is used to control the visual appearance of web pages and make them visually appealing and user-friendly.</p>
+
+    <h3><u>How to apply CSS?</u></h3>
+    <p>In web development, there are three primary ways to apply CSS (Cascading Style Sheets) to HTML documents: inline CSS, internal CSS, and external CSS. Each method has its use cases and advantages. Here's a comparison of inline, internal, and external CSS:</p>
+
+    <p>1.<strong><u>Inline CSS</u></strong></p>
+    Inline CSS is applied directly to individual HTML elements using the style attribute.
+    <br>
+    <strong>Example:-</strong>  
+    <!-- <p style="color: red; font-size: 16px;">This is a red and larger text.</p> -->
+    <p><strong><u>Pros..</u></strong></p>
+    <ul>
+        <li>Quick and easy to implement.</li>
+        <li>Suitable for applying unique styles to specific elements.</li>
+    </ul>
+
+    <p><strong><u>Cons..</u></strong></p>
+    <ul>
+        <li>Can lead to code duplication if the same style is applied to multiple elements.</li>
+        <li>Not easily maintainable, especially for larger websites.</li>
+    </ul>
+
+    <p>2. <strong><u>Internal CSS (Embedded CSS)</u></strong></p>
+    Internal CSS is placed within the <u>style</u> element in the <u>head</u> section of an HTML document.
+    <br>
+    <Strong>Example:</Strong>
+
+    <!-- <head>
+        <style>
+            p {
+                color: blue;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a blue and smaller text.</p>
+    </body> -->
+    
+    <p><strong><u>Pros..</u></strong></p>
+    <ul>
+        <li>Allows you to define styles for multiple elements on the same page.</li>
+        <li>Provides better organization and separation of concerns compared to inline CSS.</li>
+    </ul>
+
+    <p><strong><u>Cons..</u></strong></p>
+    <ul>
+        <li>Styling is limited to the specific page where it's defined.</li>
+        <li>Not as reusable as external CSS for multiple pages.</li>
+    </ul>
+
+    <p>3. <strong><u>External CSS</u></strong></p>
+    External CSS is stored in a separate .css file and linked to HTML documents using the <u>link</u> element in the <u>head</u> section.
+    <br>
+
+    <strong>Example: Add external css file</strong>
+    <!-- css file:---
+    p {
+        color: green;
+        font-size: 18px;
+    } -->
+    
+    <!-- html file:---
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <p>This is a green and larger text.</p>
+    </body> -->
+    
+    <p><strong><u>Pros..</u></strong></p>
+    <ul>
+        <li>Provides the best separation of concerns and maintainability by keeping styles in separate files.</li>
+        <li>Allows for consistent styling across multiple web pages.</li>
+    </ul>
+
+    <p><strong><u>Cons..</u></strong></p>
+    <ul>
+        <li>Requires an additional HTTP request to load the external CSS file, which can affect page load times (though this can be mitigated through browser caching).</li>
+    </ul>
+    <h3>Which One is choose?</h3>
+
+    <p><Strong><U>Inline CSS: </U></Strong>Use sparingly for specific, one-off styling needs.</p>
+    <p><Strong><U>External CSS: </U></Strong> Recommended for larger projects, multiple pages, and when you want to maintain a consistent look and feel across your website.</p>
+    <p><Strong><U>Internal CSS: </U></Strong> Suitable for small-scale projects or when you need to apply styles to a single page.</p>
+
+</body>
+</html>
